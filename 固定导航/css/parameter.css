@@ -358,3 +358,6 @@
 .correction.visible, .correction-success.visible {
     display: block;
 }
+.parameter-detail .par-fix-left {
+    display: block;
+}
