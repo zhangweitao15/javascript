@@ -1,0 +1,355 @@
+.parameter-detail {
+    margin: 20px 0 0 0;
+}
+.parameter-detail table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid #e9e9e9;
+    border-width: 1px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+.parameter-detail th,
+.parameter-detail td {
+    position: relative;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9e9e9;
+}
+.parameter-detail thead th {
+    vertical-align: middle;
+    height: 38px;
+    background: #f7f7f7;
+}
+.parameter-detail .filter {
+    padding: 0 30px;
+    min-width: 130px;
+    text-align: left;
+    font-weight: 400;
+}
+.parameter-detail th,
+.parameter-detail td {
+    position: relative;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9e9e9;
+}
+.parameter-detail thead th {
+    vertical-align: middle;
+    height: 38px;
+    background: #f7f7f7;
+}
+.parameter-detail .title-bar {
+    position: relative;
+    padding: 35px 10px 20px;
+    width: 250px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.parameter-detail .remove {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -33px;
+    background-position: 0 0;
+}
+.parameter-detail .remove:hover {
+    border-color: #02a0ea;
+    background-position: -16px 0;
+}
+.parameter-detail .title-bar h5,
+.parameter-detail .title-bar h2 {
+    font-size: 14px;
+}
+.parameter-detail .tool {
+    margin-top: 8px;
+}
+.condition-module .selected,
+.facsimile-select .selected,
+.parameter-detail .remove,
+.parameter-detail .compare,
+.parameter-detail .move-previous,
+.parameter-detail .move-next,
+.aside-nav li,
+.parameter-detail .edit,
+.aside-pk .task,
+.aside-pk .remove, #select_value {
+    background: url(../images/parameter-icons.png) no-repeat;
+}
+.parameter-detail .move-previous,
+.parameter-detail .move-next {
+    width: 28px;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1px;
+    color: #f7f7f7;
+    vertical-align: top;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.parameter-detail .move-previous {
+    padding-right: 13px;
+    background-position: 100% -62px;
+}
+.parameter-detail .first, .parameter-detail .last {
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.parameter-detail .move-previous:hover {
+    font-size: 14px;
+    color: #333;
+    background-position: 100% -97px;
+}
+.parameter-detail .compare {
+    margin: 0 8px;
+    padding: 0 5px 0 17px;
+    text-align: left;
+    cursor: pointer;
+    background-position: -54px 5px;
+}
+.parameter-detail .consult,
+.parameter-detail .compare,
+.parameter-detail .delete {
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: #fff;
+    background-color: #0f5489;
+}
+.parameter-detail .compare {
+    margin: 0 8px;
+    padding: 0 5px 0 17px;
+    text-align: left;
+    cursor: pointer;
+    background-position: -54px 5px;
+}
+.parameter-detail .consult:hover,
+.parameter-detail .compare:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f60;
+}
+.parameter-detail .move-next {
+    padding-left: 13px;
+    background-position: -61px -132px;
+}
+.parameter-detail .move-next:hover {
+    font-size: 14px;
+    color: #333;
+    background-position: -61px -167px;
+}
+.parameter-detail th,
+.parameter-detail td {
+    position: relative;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9e9e9;
+}
+.parameter-detail thead td,
+.parameter-detail tbody .param-row td:first-of-type,
+.parameter-detail tbody td div {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.parameter-detail tbody .param-row td:first-of-type {
+    min-width: 170px;
+}
+.parameter-detail thead td {
+    color: #d60000;
+}
+.parameter-detail thead td {
+    background: #fff;
+}
+.parameter-detail thead td:first-child {
+    color: #666;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.parameter-detail thead td:first-child,
+.parameter-detail tbody td:first-child {
+    text-align: right;
+    padding-right: 20px;
+}
+.parameter-detail tbody th {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    background: #f7f7f7;
+}
+.parameter-detail table .param-row td {
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.parameter-detail th, .parameter-detail td {
+    position: relative;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9e9e9;
+}
+.parameter-detail tbody td:first-child {
+    background: #f7f7f7;
+}
+/* 底部文字 */
+.parameter-detail .notes {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 26px;
+    color: #d60000;
+}
+/* 侧边固定盒子 */
+.parameter-detail .left-top-boxs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9666;
+    border: 0;
+    display: none;
+}
+.parameter-detail .par-deb-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0;
+    display: none;
+}
+.correction, .correction-success {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -205px;
+    margin-left: -280px;
+    width: 560px;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 2px;
+}
+.correction .header h3,
+.correction-success .header h3 {
+    height: 50px;
+    padding: 0 50px 0 20px;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #e9e9e9;
+}
+.correction .header span,
+.correction-success .header span {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: 50px;
+    color: #999;
+    font-size: 30px;
+    cursor: pointer;
+}
+.correction .content {
+    padding: 10px 20px 20px;
+}
+.correction .content dl {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.correction .content dl dt,
+.correction .content dd dd {
+    float: left;
+}
+.correction .content dl dt {
+    min-width: 60px;
+    font-size: 14px;
+    color: #333333;
+    height: 21px;
+}
+
+.correction .content dl dd {
+    font-size: 14px;
+    color: #0F5489;
+    font-weight: bold;
+}
+.correction-success .content {
+    padding: 20px 20px 60px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+}
+.correction .footer,
+.correction-success .footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    background-color: #fafafa;
+}
+.parameter-detail table .param-row td div:hover {
+    background-color: #F5F5F5;
+}
+.correction .footer span,
+.correction-success .footer span {
+    display: inline-block;
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px;
+    background: #0F5489;
+    border-radius: 2px;
+}
+.correction .content dl dd textarea {
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #e9e9e9;
+    resize: none;
+    box-sizing: border-box;
+}
+.parameter-detail table .param-row td div span {
+    display: none;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 12px;
+    height: 14px;
+    background: url(../images/correction.png) no-repeat 0 0;
+}
+.parameter-detail table .param-row td div:hover span {
+    display: block;
+}
+.parameter-detail table .param-row td div span:hover {
+    background-position: -12px 0;
+    cursor: pointer;
+}
+.parameter-detail table .param-row td div {
+    position: relative;
+    min-height: 24px;
+    width: 250px;
+}
+.parameter-detail .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 1002;
+}
+.correction.visible, .correction-success.visible {
+    display: block;
+}
