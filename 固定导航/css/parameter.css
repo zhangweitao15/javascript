@@ -350,6 +350,11 @@
     width: 100%;
     z-index: 1002;
 }
+.parameter-detail .fiesd-bottom {
+	position:absolute;
+	right:0;
+	bottom:0;
+}
 .correction.visible, .correction-success.visible {
     display: block;
 }
