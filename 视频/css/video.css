@@ -1,0 +1,529 @@
+[class*="am-u-"] {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left;
+    position: relative;
+}
+.am-u-sm-8 {
+    width: 66.66666667%;
+}
+.am-g-collapse [class*="am-u-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+/*  外层盒子 */
+
+
+.channel-top {
+    width: 100%;
+    height: 40px;
+    display: none;
+    background-color: #f9f9f9;
+    line-height: 3pc;
+}
+.widget {
+    margin-bottom: 20px;
+}
+.arc_list .widget {
+    background-color: #f9f9f9;
+}
+.channel-top .channel-news-nav .tab {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 44px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+}
+.big-h4 {
+    padding-left: 10px!important;
+    margin-top: 10px!important;
+}
+.widget h4 {
+    color: #222;
+    font-size: 20px;
+    line-height: 2;
+    padding-right: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #3697dc;
+    position: relative;
+    bottom: -1px;
+    z-index: 1;
+    margin: 0;
+}
+.arc_list .widget h4 {
+    color: #222;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    position: relative;
+    padding-left: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: none!important;
+}
+.arc_list .widget h4:before {
+    content: "";
+    width: 5px;
+    height: 18px;
+    background: #da3838;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+.channel-top .channel-news-nav .tab a {
+    color: #393939;
+}
+/* 面包屑结束 */
+
+/* 左侧部分 */
+.zb_ctle {
+    width: 100%;
+    float: left;
+    padding-top: 23px;
+}
+.zb_ctlebt {
+    width: 100%;
+    float: left;
+    height: 38px;
+    line-height: 30px;
+    padding-left: 2px;
+}
+.zb_ctlebt h1 {
+    float: left;
+    font-size: 20px;
+    color: #333;
+}
+.zb_ctlenr {
+    float: right;
+    width: 113px;
+}
+.zb_ctlenr ul {
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    height: 28px;
+    line-height: 28px;
+    border-right: 0;
+}
+.zb_ctlenr ul li {
+    float: left;
+    width: 56px;
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+    height: 28px;
+    padding-right: 6px;
+    font-size: 14px;
+}
+.zb_ctlenr ul li a {
+    background: url(http://img.360che.com/www/zhibo/images/zbsjx1.png) no-repeat right center;
+    width: 49px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    color: #666;
+}
+.zb_ctlenr ul li a:hover {
+    background: url(http://img.360che.com/www/zhibo/images/zbsjx2.png) no-repeat right center;
+    color: #ff6600;
+}
+
+.zb_ctlenr ul li a.xhover {
+    background: url(http://img.360che.com/www/zhibo/images/zbsjx2.png) no-repeat right center;
+    color: #ff6600;
+}
+/* 标题结束 */
+
+.zb_ctlenra {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.zb_ctlenra1 {
+    width: 800px;
+    float: left;
+    position: relative;
+    padding: 3px 0px 17px 3px;
+}
+.zb_cta1nra {
+    width: 100%;
+    float: left;
+    background: #f7f7f7;
+}
+.zb_cta1nra1 {
+    /* width: 100%; */
+    float: left;
+    padding-bottom: 8px;
+}
+.zb_cta1nra1 dl dt a img {
+    width: 800px;
+    height: 196px;
+}
+.zb_cta1nra2 {
+    width: 100%;
+    float: left;
+}
+.zb_ctnra2a {
+    width: 100%;
+    float: left;
+}
+.zb_ctnra2a span {
+    float: left;
+    font-size: 20px;
+    color: #333;
+    padding-left: 12px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+.zb_ctnra2afx {
+    float: right;
+    padding-right: 15px;
+    position: relative;
+}
+.sddm {
+    z-index: 30;
+    width: 62px;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.sddm li {
+    list-style: none;
+    float: left;
+    font-size: 12px;
+}
+.sddm li a {
+    display: block;
+    width: 60px;
+    color: #999;
+    text-decoration: none;
+    padding-top: 1px;
+}
+.sddm li a em {
+    background: url(http://img.360che.com/www/zhibo/images/zbfenx.png) no-repeat 15px 3px;
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+    display: inline-block;
+    float: left;
+}
+.sddm div {
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    padding: 27px 18px 0px 19px;
+    border-top: 0;
+    width: 62px;
+    background: url(http://img.360che.com/www/zhibo/images/zbfxbj1.jpg) no-repeat;
+    height: 136px;
+    visibility: hidden;
+    z-index: 1000;
+}
+.bdsharebuttonbox a {
+    width: 24px;
+    padding: 6px 18px 0px 19px;
+}
+.bdshare-button-style0-16 a,
+.bdshare-button-style0-16 .bds_more {
+    float: left;
+    font-size: 12px;
+    padding-left: 17px;
+    line-height: 16px;
+    height: 16px;
+    background-image: url(../img/share/icons_0_16.png?v=91362611.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 9px     ;
+}
+.sddm li a {
+    display: block;
+    width: 60px;
+    color: #999;
+    text-decoration: none;
+    padding-top: 1px;
+}
+.sddm div a {
+    width: 24px;
+    padding: 25px 6px 0px 19px;
+}
+
+.bdsharebuttonbox .bds_tsina {
+    background: url(https://img.kcimg.cn/www/zhibo/images/zbfx1.jpg) no-repeat !important;
+}
+.bdsharebuttonbox .bds_qzone {
+    background: url(https://img.kcimg.cn/www/zhibo/images/zbfx2.jpg) no-repeat !important;
+}
+.bdsharebuttonbox .bds_weixin {
+    background: url(https://img.kcimg.cn/www/zhibo/images/zbfx3.jpg) no-repeat !important;
+}
+.bdshare-button-style0-16 .bds_tsina {
+    background-position: 0 -104px;
+}
+
+.bdshare-button-style0-16 .bds_qzone {
+    background-position: 0 -52px;
+}
+.bdshare-button-style0-16 .bds_weixin {
+    background-position: 0 -1612px;
+}
+.bdshare-button-style0-16:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.sddm li a:hover {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-bottom: 0;
+    border-top: 0;
+    color: #000;
+}
+/*  分享显示和隐藏部分结束*/
+
+
+.zb_ctnra2b {
+    float: left;
+    padding: 0px 11px 0px 12px;
+}
+.zb_ctnra2b p {
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+}
+.zb_ctnra2c {
+    float: left;
+    padding: 4px 0px 7px 14px;
+    width: 800px;
+}
+.zb_ctnra2cle {
+    float: left;
+}
+.zb_ctnra2cle ul li {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    padding: 0px 10px 0px 0px;
+}
+.zb_ctnra2cle ul li em {
+    float: left;
+    padding: 0px 19px 0px 0px;
+}
+.zb_ctnra2cri {
+    float: right;
+}
+.zb_ctnra2cri ul li {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    padding: 0px 10px 0px 0px;
+}
+.zb_ctnra2cri ul li em {
+    float: left;
+    padding: 2px 5px 0px 0px;
+}
+.zb_ctnra2cri ul li p {
+    float: left;
+}
+.zb_ctnra2cle ul li p {
+    float: left;
+}
+.zb_cta1nrb {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 75px;
+    height: 75px;
+}
+.zb_cta1nra1 dl dt a img:hover,
+.sddm div a img:hover, .zbjxza1b2 dl dt a img:hover,
+.zb_imgdl dt a img:hover {
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+/* 左侧部分结束*/
+
+/* 右侧日历部分 */
+.am-u-sm-8 {
+    width: 66.66666667%;
+  }
+  .am-u-sm-4 {
+    width: 33.33333333%;
+  }
+  [class*="am-u-"] + [class*="am-u-"]:last-child {
+    float: right;
+  }
+/* 外层盒子 */
+.zb_ctri {
+    width: 366px;
+    overflow: hidden;
+    float: right;
+    /* padding-top: 23px; */
+}
+.zb_ctria {
+    width: 100%;
+    float: left;
+}
+.zb_ctriabt {
+    width: 100%;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    background: #3591dc;
+}
+.zb_ctriabt strong {
+    width: 163px;
+    float: left;
+    background: url(../images/zbribiao.png) no-repeat center right;
+    display: inline-block;
+    height: 42px;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 42px;
+}
+.zb_ctriabt p {
+    float: left;
+    width: 170px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.zbrightmenu {
+    width: 373px;
+    float: left;
+}
+.zbrilisj {
+    width: 373px;
+    float: left;
+    height: 20px;
+    text-align: center;
+    background: #f7f7f7;
+    line-height: 20px;
+    padding: 10px 0px;
+    box-sizing: content-box;
+}
+.zbrilisj span a.zbrlsjjt1 {
+    background: url(../images/zbjt1.png) no-repeat center right;
+    width: 136px;
+    height: 20px;
+    float: left;
+    display: inline-block;
+}
+.zbrilisj p {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+.zbrilisj span a.zbrlsjjt2 {
+    background: url(../images/zbjt2.png) no-repeat center left;
+    width: 136px;
+    height: 20px;
+    float: right;
+    display: inline-block;
+}
+.zbrili {
+    width: 373px;
+    float: left;
+}
+.zbrili table {
+    width: 100%;
+    text-align: center;
+}
+.zbrili table tr {
+    float: left;
+    text-align: center;
+    width: 373px;
+    overflow: hidden;
+}
+.zbrili table tr th {
+    background: #f7f7f7;
+    font-size: 14px;
+    color: #666;
+    width: 54px;
+    padding: 0px 0px 10px 2px;
+}
+.zbrili table tr td {
+    font-size: 14px;
+    color: #666;
+    float: left;
+    margin-right: 8px;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 8px;
+}
+.zbrili table tr td.wu {
+    margin-right: 0px;
+}
+.zbwenzibj {
+    float: left;
+    margin-right: 8px;
+    width: 46px;
+    height: 46px;
+    line-height: 41px;
+    text-align: center;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.zbwenzibj.xxhover1 {
+    background: #3591dc;
+    color: #fff;
+}
+.zbwenzibj:hover {
+    background: #3591dc;
+    color: #fff;
+}
+.zbrilibiao {
+    width: 100%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 5px 0px 10px;
+}
+.zbrilibiao ul {
+    float: left;
+    padding-left: 90px;
+}
+.zbrilibiao ul li {
+    float: left;
+    display: inline-block;
+    width: 65px;
+}
+.zbrilibiao ul li p.zbbiaozhu1 {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #c4c4c4;
+    float: left;
+    margin: 4px 8px 0px 0px;
+}
+.zbrilibiao ul li strong {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    float: left;
+}
+.zbrilibiao ul li p.zbbiaozhu2 {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #d60000;
+    float: left;
+    margin: 4px 8px 0px 0px;
+}
+.zbrilibiao ul li p.zbbiaozhu3 {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #6ea200;
+    float: left;
+    margin: 4px 8px 0px 0px;
+}
+
+/* 右侧日历部分结束 */
