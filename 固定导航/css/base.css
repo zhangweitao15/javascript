@@ -38,6 +38,7 @@ select {
 }
 .special {
   position: relative;
+  
 }
 .special::before {
   content: '特卖';
