@@ -27,36 +27,43 @@ $(function () {
     });
 })
 $(function () {
-    var h;
+    
+    var h = $('table').offset().left;
     ti = $('#fixed_top').offset().top
     $(this).scroll(function () {
         var t = $(document).scrollTop();
         var tl = $(document).scrollLeft()
-        h = $('table').offset().left;
-        console.log(tl, h);
         var r = $("#fixed_top").height();
         var w = $("#fixed_top").width();
         var s = $("body").width();
         s = s - w;
         var top = ti + r - t;
-        console.log(top);
+        var left = h - tl;
+        left = left + 'px';
+        console.log(left);
+        
         
         if (tl < h) {
+            $(".left-top-boxs").removeClass('par-fix-left');
+            $(".par-deb-box").removeClass('par-fix-left');
+            $("#fixed_top").css('left', left)
+            
+        } else {
             $(".left-top-boxs").addClass('par-fix-left');
             $('.par-deb-box').addClass('par-fix-left');
             $('.par-deb-box').css('top', top + 'px')
-        } else {
-           $(".left-top-boxs").removeClass('par-fix-left');
-           $(".par-deb-box").removeClass('par-fix-left');
-        }
-        if (t > s) {
-            $(".left-top-boxs").addClass('par-fix-left');
-            $(".par-deb-box").addClass('par-fix-left');
-            $('.par-deb-box').css('top', top + 'px')
+            $("#fixed_top").css('left', left)
 
-        } else {
-            $(".left-top-boxs").removeClass('par-fix-left');
-            $(".par-deb-box").removeClass('par-fix-left');
         }
+
+        // if (t > s) {
+        //     $(".left-top-boxs").addClass('par-fix-left');
+        //     $(".par-deb-box").addClass('par-fix-left');
+        //     $('.par-deb-box').css('top', top + 'px')
+
+        // } else {
+        //     $(".left-top-boxs").removeClass('par-fix-left');
+        //     $(".par-deb-box").removeClass('par-fix-left');
+        // }
     })
 })
