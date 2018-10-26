@@ -75,23 +75,26 @@ $(function () {
     $('.J_compare_menu').css('top', top + 'px');
 
   })
-
-  $('.J_compare_menu').on('click', 'a', function () {
-    var index = $(this).index(),
-      r = $("#fixed_top").height(),
-      boxTop;
-    setMenuActive(index)
-    $('#fixed_top').hasClass('fixed-top')
-    boxTop = $('.J_compare_table >.param-tit').eq(index).offset().top - r - index * $('.J_compare_menu').find('a:eq(0)').outerHeight(true);
-    isAnimate = true;
-    $('html, body').animate({
-      scrollTop: boxTop + 'px'
-    }, 400, function () {
-      isAnimate = false;
-    })
-  })
+	setMenuLocation()
 })
+setMenuLocation()
 
+function setMenuLocation () {
+	$('.J_compare_menu').on('click', 'a', function () {
+		var index = $(this).index(),
+			r = $("#fixed_top").height(),
+			boxTop;
+		setMenuActive(index)
+		$('#fixed_top').hasClass('fixed-top')
+		boxTop = $('.J_compare_table >.param-tit').eq(index).offset().top - r - index * $('.J_compare_menu').find('a:eq(0)').outerHeight(true);
+		isAnimate = true;
+		$('html, body').animate({
+			scrollTop: boxTop + 'px'
+		}, 400, function () {
+			isAnimate = false;
+		})
+	})
+}
 $(function () {
   $(window).on('scroll', function () {
     $('.J_compare_table >.param-tit').each(function(index, ele) {
@@ -108,7 +111,7 @@ $(function () {
               setMenuActive(0);
           }
           if(scrollTop + mTop > sectionTop + sectionHeight) {
-            // $('.J_compare_menu').find('.on').removeClass('on');
+            $('.J_compare_menu').find('.on').removeClass('on');
           }
   })
 })
