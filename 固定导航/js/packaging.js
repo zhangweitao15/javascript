@@ -34,7 +34,7 @@ $(function () {
 		var offsetLeft = $(clTable).offset().left;
 		var scrollLeft = $(window).scrollLeft();
 		var widthLeft = $(boxLeft).offset().width;
-		var bodyTop = offsetTop -  scrollTop + heightTop;
+		var bodyTop = offsetTop - scrollTop + heightTop;
 		var titleTop = $('#fixed_top').offset().top - scrollTop;
 		if (scrollLeft >= offsetLeft) {
 			$('.left-top-boxs').css({
@@ -50,9 +50,9 @@ $(function () {
 			$('.par-deb-box').css('display', 'none');
 		}
 	})
-//	// 左侧楼梯
+	//	// 左侧楼梯
 	$(window).scroll(function () {
-		if ($(boxTop).css('position') == 'fixed' ) {
+		if ($(boxTop).css('position') == 'fixed') {
 			var menuTop = heightTop;
 			$('.J_compare_menu').css({
 				position: 'fixed',
@@ -64,14 +64,14 @@ $(function () {
 				top: '342px'
 			})
 		}
-		$('.J_compare_menu').on('click', 'a', function() {
+		$('.J_compare_menu').on('click', 'a', function () {
 			var index = $(this).index();
 			menuActive(index)
 		})
 	})
 	function menuActive(index) {
-	  $('.J_compare_menu').find('.on').removeClass('on');
-	  $('.J_compare_menu').find('a').eq(index).addClass('on');
+		$('.J_compare_menu').find('.on').removeClass('on');
+		$('.J_compare_menu').find('a').eq(index).addClass('on');
 	}
 	$('.J_compare_table > .param-tit').eq(1)
 
