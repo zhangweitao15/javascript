@@ -6,7 +6,7 @@ $(function () {
     $(this).scroll(function () {
       t = $(document).scrollTop();
       top = $('#fixed_top').offset().top - t;
-      console.log($('#fixed_top').offset().top, t, top);
+      // console.log($('#fixed_top').offset().top, t, top);
       $('.left-top-boxs').css({top:  top});
       h = $('table').offset().top;
       r = $("#fixed_top").height();
@@ -17,7 +17,7 @@ $(function () {
         $('#fixed_top').next().css('height', 0);
       } else {
         $("#fixed_top").addClass('fixed-top');
-        $('#fixed_top').next().css('height', 160 + 'px');
+        $('#fixed_top').next().css('height', 121 + 'px');
       }
       if (t > s) {
         $("#fixed_top").removeClass('fixed-top');

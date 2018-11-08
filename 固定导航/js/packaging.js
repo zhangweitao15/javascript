@@ -23,10 +23,10 @@ $(function () {
 		if (scrollTop >= offsetTop) {
 			$(boxTop).addClass('fixed-top');
 			$(boxTop).css('left', fiLeft);
-			$(boxTop).next().css('height', heightTop + 'px');
+			// $(boxTop).next().css('height', heightTop + 'px');
 		} else {
 			$(boxTop).removeClass('fixed-top');
-			$(boxTop).next().css('height', '0');
+			// $(boxTop).next().css('height', '0');
 		}
 	})
 	// 左侧固定

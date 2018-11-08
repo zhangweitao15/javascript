@@ -140,7 +140,7 @@
 .parameter-detail thead td,
 .parameter-detail tbody .param-row td:first-of-type,
 .parameter-detail tbody td div {
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     word-wrap: break-word;
     word-break: break-all;
