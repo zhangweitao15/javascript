@@ -16,13 +16,20 @@
 		<link rel="stylesheet" type="text/css" href="css/parameter.css" />
 		<script src="./js/jquery-1.11.0.min.js"></script>
 		<!-- <script src="./js/packaging.js"></script> -->
-		<script src="./js/parameter.js"></script>
+		<script src="./js/packaging.js"></script>
 	</head>
-
+	<style type="text/css">
+		.box {
+			height: 200px;
+		}
+	</style>
 	<body>
 		<div class="wrap">
 			<!-- 参数表格 -->
-			<div class="compare-param-menu  J_compare_menu" style="left: 108px; top: 141px; margin-left: -73px; position: fixed;">
+			<div class="box">
+				
+			</div>
+			<div class="compare-param-menu  J_compare_menu" style="left: 108px; top: 340px; margin-left: -73px; position: absolute;">
 				<a href="javascript:;" class="on">报价信息</a>
 				<a href="javascript:;" class="">基本参数</a>
 				<a href="javascript:;" class="">车身参数</a>
@@ -34,22 +41,12 @@
 				<a href="javascript:;" class="">车轮制动</a>
 			</div>
 			<div class="parameter-detail">
-				<table>
+				<table class="cl-table">
 					<!-- 查询默认在售的品牌名称和报价 最底价 start -->
 					<thead>
-						<tr id="fixed_top" style="left: 111.5px;" class="">
+						<tr id="fixed_top" style="display:'absolute'; left: 111.5px;" class="">
 							<th id="ai_p_0">
 								<div class="filter">
-									<!--
-										<label for="highlight_parameter">
-											<input type="checkbox" id="highlight_parameter"  />
-											高亮显示差异参数
-										</label>
-										<label for="hidden_parameter">
-											<input type="checkbox" id="hidden_parameter" />
-											隐藏相同参数
-										</label>
-										-->
 								</div>
 							</th>
 			
@@ -3775,7 +3772,7 @@
 				<table class="left-top-boxs" style="top: 0px;">
 					<thead>
 						<tr>
-							<th id="a_p_0" style="width: 171px; height: 160px;"></th>
+							<th id="a_p_0" style="width: 170px; height: 121px;"></th>
 						</tr>
 					</thead>
 				</table>

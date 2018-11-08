@@ -1,127 +1,78 @@
-
 $(function () {
-    var compare, selectors,
-	isAnimate = false,
-	CLASS_FIXED = 'fixed-top',
-	selectHeight,
-	menuWidth;
-
-selectors = {
-	table: '.J_compare_table',
-	section: '.J_compare_table>.param-tit',
-	menu: '.J_compare_menu',
-	select: '#fixed_top'
-};
-
-var selectHeight = $(selectors.select).height();
-var menuWidth = $(selectors.menu).width();
-compare = {
-	init: function() {
-		if($(selectors.menu).length > 0) {
-			this.setSelectFixed();
-			this.setMenuLocation();
+	var boxTop = '#fixed_top',//顶部盒子
+		boxLeft = '#ai_p_0',//左侧盒子
+		boxSid,//侧边栏
+		finxd,//固定导航类名
+		clTable = '.cl-table';//固定导航界限
+	var offsetTop,// 元素距浏览器顶部
+		offsetLeft,// 元素距浏览器左侧
+		scrollTop,// 页面卷曲高度
+		scrollLeft,// 页面卷曲宽度
+		heightTop,//顶部固定盒子的高度
+		widthLeft,//左侧固定盒子的宽度
+		fiLeft,// 顶部固定盒子left
+		noneTop;// 左侧隐藏的头部top
+	//顶部固定
+	$(window).scroll(function () {
+		offsetTop = $(clTable).offset().top;
+		offsetLeft = $(clTable).parent().offset().left;
+		scrollLeft = $(window).scrollLeft();
+		scrollTop = $(window).scrollTop();
+		heightTop = $(boxTop).height();
+		var fiLeft = offsetLeft - scrollLeft;
+		if (scrollTop >= offsetTop) {
+			$(boxTop).addClass('fixed-top');
+			$(boxTop).css('left', fiLeft);
+			$(boxTop).next().css('height', heightTop + 'px');
+		} else {
+			$(boxTop).removeClass('fixed-top');
+			$(boxTop).next().css('height', '0');
 		}
-
-		this.bindEvent();
-	},
-	bindEvent: function() {
-		var self = this;
-
-		$(selectors.menu).on('click', 'a', function() {
+	})
+	// 左侧固定
+	$(window).scroll(function () {
+		var offsetLeft = $(clTable).offset().left;
+		var scrollLeft = $(window).scrollLeft();
+		var widthLeft = $(boxLeft).offset().width;
+		var bodyTop = offsetTop -  scrollTop + heightTop;
+		var titleTop = $('#fixed_top').offset().top - scrollTop;
+		if (scrollLeft >= offsetLeft) {
+			$('.left-top-boxs').css({
+				display: 'block',
+				top: titleTop + 'px'
+			});
+			$('.par-deb-box').css({
+				display: 'block',
+				top: bodyTop + 'px'
+			});
+		} else {
+			$('.left-top-boxs').css('display', 'none');
+			$('.par-deb-box').css('display', 'none');
+		}
+	})
+//	// 左侧楼梯
+	$(window).scroll(function () {
+		if ($(boxTop).css('position') == 'fixed' ) {
+			var menuTop = heightTop;
+			$('.J_compare_menu').css({
+				position: 'fixed',
+				top: menuTop + 'px'
+			})
+		} else {
+			$('.J_compare_menu').css({
+				position: 'absolute',
+				top: '342px'
+			})
+		}
+		$('.J_compare_menu').on('click', 'a', function() {
 			var index = $(this).index();
-
-			self.setMenuActive(index);
-			self.setCompareLocation(index);
-		});
-
-		$(window).on('scroll', function() {
-			self.setSelectFixed();
-			self.setMenuLocation();
+			menuActive(index)
 		})
-	},
-	setSelectFixed: function() {
-		var scrollTop = $(window).scrollTop(),
-		    scrollLeft = $(window).scrollLeft(),
-            selectTop = $(selectors.select).parent().offset().top,
-            selectLeft = $(selectors.select).parent().offset().left;
-		if(scrollTop >= selectTop) {
-			$(selectors.select).addClass(CLASS_FIXED);
-			$(selectors.menu).css({
-				top: selectHeight,
-				left: selectLeft - scrollLeft - menuWidth - 3,
-				marginLeft: 0,
-				position: 'fixed'
-			});
-		} else {
-			$(selectors.select).removeClass(CLASS_FIXED);
-			$(selectors.menu).css({
-				left: '50%',
-				top: '425px',
-				marginLeft: '-675px',
-				position: 'absolute'
-			});
-		}
-
-		if($(selectors.menu).css('position') == 'fixed') {
-			$(selectors.select).css({
-				left: selectLeft - scrollLeft
-			});
-		}
-	},
-
-	setMenuLocation: function() {
-		var self = this;
-
-		if(isAnimate) {
-			return;
-		}
-
-		$(selectors.section).each(function(index, ele) {
-			var scrollTop = $(window).scrollTop(),
-				sectionTop = $(this).offset().top,
-				sectionHeight = $(this).height(),
-				menuTop = $(selectors.menu).position().top,
-				mTop = menuTop + index * $(selectors.menu).find('a:eq(0)').outerHeight(true);
-                console.log(sectionTop);
-                
-			if($(selectors.menu).css('position') == 'fixed') {
-				if(scrollTop + mTop >= sectionTop && scrollTop + mTop <= sectionTop + sectionHeight) {
-					self.setMenuActive(index);
-				}
-			} else {
-				self.setMenuActive(0);
-			}
-
-			if(scrollTop + mTop > sectionTop + sectionHeight) {
-				$(selectors.menu).find('.on').removeClass('on');
-			}
-		});
-	},
-
-	setMenuActive: function(index) {
-		$(selectors.menu).find('.on').removeClass('on');
-		$(selectors.menu).find('a').eq(index).addClass('on');
-	},
-
-	setCompareLocation: function(index) {
-		var menuTop, boxTop;
-
-		if($(selectors.menu).css('position') == 'fixed') {
-			menuTop = $(selectors.menu).position().top;
-		} else {
-			menuTop = selectHeight;
-		}
-
-		boxTop = $(selectors.section).eq(index).offset().top - selectHeight - index * $(selectors.menu).find('a:eq(0)').outerHeight(true);
-
-		isAnimate = true;
-
-		$('html, body').animate({
-			scrollTop: boxTop + 'px'
-		}, 400, function() {
-			isAnimate = false;
-		});
+	})
+	function menuActive(index) {
+	  $('.J_compare_menu').find('.on').removeClass('on');
+	  $('.J_compare_menu').find('a').eq(index).addClass('on');
 	}
-}
-compare.init();
+	$('.J_compare_table > .param-tit').eq(1)
+
 })

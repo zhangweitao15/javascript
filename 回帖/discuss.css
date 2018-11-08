@@ -1,0 +1,62 @@
+.discuss {
+  color: #999;
+  border: 1px solid #E9E9E9;
+}
+.discuss p {
+  margin: 0;
+  padding: 0;
+}
+.discuss ul {
+  padding: 0;
+  margin: 0;
+}
+.discuss .discuss-left {
+  border-right: 1px solid #E9E9E9;
+  padding: 10px 10px 74px;
+  float: left;
+  width: 204px;
+  background-color: #f7f7f7;
+}
+.discuss .discuss-left h6 {
+  color: #999;
+  text-align: center;
+}
+.discuss .discuss-left ul li {
+  margin-top: 8px;
+}
+.discuss .discuss-right {
+  margin-left: 216px;
+  padding: 15px 30px 0;
+}
+.discuss .discuss-right .top div {
+  overflow: hidden;
+  min-height: 100px;
+}
+.discuss .discuss-right .top div.up {
+  padding-bottom: 45px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.am-g:before,
+.am-g:after {
+  content: " ";
+  display: table;
+}
+.am-g:after {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}

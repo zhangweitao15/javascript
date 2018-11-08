@@ -323,7 +323,7 @@
 .parameter-detail .fixed-top {
     position: fixed;
     top: 0;
-    margin: 0 auto !important;
+    /*margin: 0 auto !important;*/
     z-index: 10;
 }
 .parameter-detail .fiesd-bottom {
@@ -343,4 +343,9 @@
 }
 .compare-param-menu .on:after, .compare-pic-menu .on:after {
     background-image: url(../images/jt.png);
+}
+
+.discuss {
+	height: 20px;
+	background-color: #ccc;
 }

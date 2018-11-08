@@ -6,8 +6,8 @@ $(function () {
     $(this).scroll(function () {
       t = $(document).scrollTop();
       top = $('#fixed_top').offset().top - t;
-      $('.left-top-boxs').css('top', top);
-
+      console.log($('#fixed_top').offset().top, t, top);
+      $('.left-top-boxs').css({top:  top});
       h = $('table').offset().top;
       r = $("#fixed_top").height();
       s = $("body").height();
@@ -43,7 +43,8 @@ $(function () {
     s = s - w;
     var top = ti + r - t;
     var left = h - tl;
-    left = left + 'px';
+    left = left + 
+    'px';
 
 
     if (tl < h) {
